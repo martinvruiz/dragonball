@@ -17,17 +17,17 @@ export const Characters = () => {
 
     return (
     <div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 p-6">
             {characters.map((character) => (
                 <div 
                     key={character.id}
-                    className="bg-white text-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                    className="bg-gray-100 text-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
                     <div className="relative h-72">
                         <img 
                             src={character.image} 
                             alt={character.name} 
-                            className="w-full h-full object-contain rounded-t-xl"
+                            className="w-full h-full object-contain rounded-t-xl p-1"
                         />
                     <div className="absolute top-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-full opacity-30 rounded-t-xl"></div>
                     </div>

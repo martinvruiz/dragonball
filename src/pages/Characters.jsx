@@ -1,5 +1,6 @@
 import useDragonApi from "../api/useDragonApi"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Characters = () => {
     
@@ -24,18 +25,17 @@ export const Characters = () => {
                     className="bg-gray-100 text-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
                     <div className="relative h-72">
-                        <img 
-                            src={character.image} 
-                            alt={character.name} 
-                            className="w-full h-full object-contain rounded-t-xl p-1"
+                        <Link to={`/characters/${character.id}`}>
+                            <img 
+                                src={character.image} 
+                                alt={character.name} 
+                                className="w-full h-full object-contain rounded-t-xl p-1"
                         />
-                    <div className="absolute top-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-full opacity-30 rounded-t-xl"></div>
+                        <div className="absolute top-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-full opacity-30 rounded-t-xl"></div>
+                        </Link>
                     </div>
                     <div className="p-4">
                         <h2 className="text-xl font-semibold mb-2">{character.name}</h2>
-                        <p className="text-sm text-gray-600">{character.race}</p>
-                        <p className="text-sm text-gray-500">Base ki: {character.ki}</p>
-                        <p className="text-sm text-gray-500">Max ki: {character.maxKi}</p>
                     </div>
                 </div>
             ))}

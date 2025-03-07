@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import { Characters } from './pages/Characters'
+import { CharacterDetail } from './components/CharacterDetail'
 import Planets from './pages/Planets'
 import Navbar from './components/Navbar'
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/characters" element={<Characters />} />
+          <Route path="/characters/:id" element={<CharacterDetail/>}/>
           <Route path="/planets" element={<Planets />} />
         </Routes>
 

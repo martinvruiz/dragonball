@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import "tailwindcss";
+
+
+
+
+@theme {
+    --font-bangers: 'Bangers', system-ui;
+}

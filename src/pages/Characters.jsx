@@ -40,32 +40,32 @@ export const Characters = () => {
                 </div>
             ))}
     </div>
-    <div className="flex justify-center my-6 gap-2">
+    <div className="flex justify-center my-6 gap-4">
         <button
             onClick={() => handlePagination(paginationLinks.first)}
             disabled={!paginationLinks.first}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"   
+            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
             Primer pag.
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.previous)}
             disabled={!paginationLinks.previous}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"   
+            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
             Previa
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.next)}
             disabled={!paginationLinks.next}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"      
+            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"      
         >
             Siguiente
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.last)}
             disabled={!paginationLinks.last}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"     
+            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"     
         >
             Ultima pag.
         </button>

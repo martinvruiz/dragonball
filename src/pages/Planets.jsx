@@ -40,30 +40,30 @@ const Planets = () => {
         <button
             onClick={() => handlePagination(paginationLinks.first)}
             disabled={!paginationLinks.first}
-          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"   
+          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
-            First
+            Primer pag.
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.previous)}
             disabled={!paginationLinks.previous}
-          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"   
+          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
-            Previous
+            Previa
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.next)}
             disabled={!paginationLinks.next}
-          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"   
+          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
-            Next
+            Siguiente
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.last)}
             disabled={!paginationLinks.last}
-          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50"   
+          className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
-            Last
+            Ultima pag.
         </button>
     </div>
         </div>

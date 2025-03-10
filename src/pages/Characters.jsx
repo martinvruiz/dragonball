@@ -34,7 +34,7 @@ export const Characters = () => {
                         <div className="absolute top-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-full opacity-30 rounded-t-xl"></div>
                         </Link>
                     </div>
-                    <div className="p-4">
+                    <div className="p-4 bg-orange-500 text-gray-200">
                         <h2 className="text-xl font-semibold mb-2">{character.name}</h2>
                     </div>
                 </div>
@@ -44,28 +44,28 @@ export const Characters = () => {
         <button
             onClick={() => handlePagination(paginationLinks.first)}
             disabled={!paginationLinks.first}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
+            className="bg-orange-500 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
             Primer pag.
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.previous)}
             disabled={!paginationLinks.previous}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
+            className="bg-orange-500 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"   
         >
             Previa
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.next)}
             disabled={!paginationLinks.next}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"      
+            className="bg-orange-500 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"      
         >
             Siguiente
         </button>
         <button
             onClick={() => handlePagination(paginationLinks.last)}
             disabled={!paginationLinks.last}
-            className="bg-gray-700 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"     
+            className="bg-orange-500 text-white py-2 px-4 rounded-lg disabled:opacity-50 hover:scale-110 transform transition duration-300"     
         >
             Ultima pag.
         </button>
